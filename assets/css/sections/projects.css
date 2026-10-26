@@ -1,0 +1,29 @@
+/* Projetos homologados, impacto, clientes e depoimentos em 4 colunas */
+.pj__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.pj{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px 20px;overflow:hidden;transition:transform .25s,box-shadow .25s,border-color .25s}
+.pj::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:linear-gradient(90deg,var(--accent),var(--blue))}
+.pj:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(10,42,94,.45);border-color:#cfd9e8}
+.pj__type{display:inline-block;font:600 .72rem var(--font-b);letter-spacing:.06em;text-transform:uppercase;color:var(--blue);background:#e8f0fb;border-radius:99px;padding:3px 10px}
+.pj__power{display:flex;align-items:baseline;gap:6px;margin:14px 0 6px}
+.pj__power strong{font:700 2.3rem var(--font-h);color:var(--navy);line-height:1}
+.pj__power small{font:600 .95rem var(--font-h);color:var(--accent-dark)}
+.pj h3{font-size:1.02rem}
+.pj__loc{font-size:.86rem;color:var(--muted);margin:2px 0 14px}
+.pj dl{display:grid;gap:8px;border-top:1px dashed var(--line);padding-top:12px}
+.pj dl div{display:flex;justify-content:space-between;gap:10px;font-size:.88rem}
+.pj dt{color:var(--muted)}
+.pj dd{font-weight:600;color:var(--ink)}
+.impact{display:grid;grid-template-columns:repeat(3,1fr);margin-top:28px;border-radius:var(--radius);overflow:hidden;background:linear-gradient(135deg,var(--navy-900),var(--blue));color:#fff}
+.impact div{padding:28px 20px;text-align:center;border-right:1px solid rgba(255,255,255,.14)}
+.impact div:last-child{border:0}
+.impact strong{display:block;font:700 clamp(1.5rem,3vw,2.2rem) var(--font-h);color:var(--accent)}
+.impact span{font-size:.92rem;opacity:.9}
+.clients{margin-top:34px;text-align:center}
+.clients p{font:600 .8rem var(--font-b);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.clients ul{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.clients li{padding:8px 18px;border:1px solid var(--line);background:#fff;border-radius:99px;font:600 .92rem var(--font-h);color:var(--navy)}
+.gallery__more{text-align:center;margin-top:24px;font-size:.95rem}
+.gallery__more a{color:var(--blue);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.grid--4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:1080px){.pj__grid,.grid--4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.pj__grid,.grid--4{grid-template-columns:1fr}.impact{grid-template-columns:1fr}.impact div{border-right:0;border-bottom:1px solid rgba(255,255,255,.14)}}

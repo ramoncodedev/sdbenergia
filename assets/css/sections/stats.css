@@ -1,0 +1,17 @@
+/* Seção: stats */
+
+.stats{padding:clamp(50px,6vw,80px) 0 0}
+.stats__grid{display:grid;grid-template-columns:repeat(4,1fr);background:var(--gray);border-radius:var(--radius);overflow:hidden}
+.stats__grid>div{padding:1.8rem 1rem;text-align:center}
+.stats strong{display:block;font:700 2rem var(--font-h);color:var(--ink);line-height:1.1}
+.stats span{font-size:.9rem;color:var(--muted)}
+.stats__accent{background:var(--accent)}
+.stats__accent strong,.stats__accent span{color:#1a1200}
+
+@media (max-width:1060px){
+  .stats__grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media (max-width:620px){
+  .stats strong{font-size:1.6rem}
+}

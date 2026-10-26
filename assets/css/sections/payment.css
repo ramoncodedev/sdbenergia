@@ -1,0 +1,16 @@
+/* Seção: payment */
+
+.pay{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.pay__lead{margin-top:1rem;font-size:1.05rem}
+.pay__list{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pay__item{padding:1.4rem;border-radius:var(--radius);background:var(--gray);border-left:4px solid var(--accent)}
+.pay__item strong{display:block;font:600 1.1rem var(--font-h);color:var(--ink);margin-bottom:.25rem}
+.pay__item span{font-size:.92rem}
+
+@media (max-width:860px){
+  .pay{grid-template-columns:1fr}
+}
+
+@media (max-width:620px){
+  .pay__list{grid-template-columns:1fr}
+}

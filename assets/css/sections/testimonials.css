@@ -1,0 +1,16 @@
+/* Seção: testimonials */
+
+.quote{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem;display:flex;flex-direction:column;gap:1rem}
+.stars{color:var(--accent);letter-spacing:2px;font-size:1.05rem}
+.quote blockquote{flex:1;color:var(--ink)}
+.quote figcaption{display:flex;align-items:center;gap:.8rem}
+.quote small{display:block;color:var(--muted);font-size:.8rem}
+.av{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font:700 1rem var(--font-h)}
+.feature{display:grid;grid-template-columns:.42fr .58fr;gap:2.5rem;align-items:center;margin-top:26px;padding:1.5rem;border-radius:16px;background:#fff;border:1px solid var(--line)}
+.feature img{border-radius:12px;width:100%;aspect-ratio:4/5;object-fit:cover;max-height:420px}
+.feature h3{font-size:1.6rem;margin-bottom:.8rem}
+.feature p{margin-bottom:1.4rem}
+
+@media (max-width:860px){
+  .feature{grid-template-columns:1fr}
+}

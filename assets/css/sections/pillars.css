@@ -1,0 +1,12 @@
+/* Seção: pillars */
+
+.pillars{position:relative;margin-top:-80px;z-index:2}
+.pillars__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pillar{display:flex;gap:1rem;padding:1.6rem;background:#fff;border-radius:var(--radius);box-shadow:0 10px 30px rgba(15,23,42,.12);border-top:4px solid var(--accent)}
+.pillar__icon{flex:none;width:48px;height:48px;border-radius:10px;display:grid;place-items:center;background:var(--gray);color:var(--navy)}
+.pillar h3{margin-bottom:.35rem}
+.pillar p{font-size:.93rem;line-height:1.55}
+
+@media (max-width:860px){
+  .pillars__grid{grid-template-columns:1fr}
+}

@@ -1,0 +1,22 @@
+/* Componentes reutilizáveis: botões, etiquetas, listas, WhatsApp flutuante, lightbox */
+
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.8rem 1.5rem;border-radius:10px;font:600 .95rem var(--font-h);border:2px solid transparent;transition:background .2s,color .2s,border-color .2s;text-align:center}
+.btn--primary{background:var(--accent);color:#1a1200}
+.btn--primary:hover{background:var(--accent-dark)}
+.btn--outline{border-color:var(--navy);color:var(--navy)}
+.btn--outline:hover{background:var(--navy);color:#fff}
+.btn--outline-light{border-color:rgba(255,255,255,.7);color:#fff}
+.btn--outline-light:hover{background:#fff;color:var(--navy)}
+.btn--lg{padding:1rem 1.7rem;font-size:1rem}
+.btn--block{width:100%}
+.kicker{font:600 .82rem var(--font-h);letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:.7rem}
+.checks{margin:1.2rem 0 1.8rem;display:grid;gap:.6rem}
+.checks li{position:relative;padding-left:1.9rem;color:var(--ink);font-weight:500}
+.checks li::before{content:"";position:absolute;left:0;top:.35em;width:1.1rem;height:1.1rem;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/70% no-repeat;border-radius:50%}
+.tag{display:inline-block;background:var(--accent);color:#1a1200;font:700 .72rem var(--font-h);letter-spacing:.08em;text-transform:uppercase;padding:.2rem .65rem;border-radius:6px}
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;box-shadow:0 8px 20px rgba(0,0,0,.25);transition:transform .2s}
+.wa-float:hover{transform:scale(1.07)}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(6,27,66,.94);display:grid;place-items:center;padding:24px}
+.lightbox[hidden]{display:none}
+.lightbox img{max-height:92vh;max-width:min(96vw,1100px);border-radius:10px}
+.lightbox__close{position:absolute;top:18px;right:22px;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;font-size:1.8rem;line-height:1}

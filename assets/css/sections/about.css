@@ -1,0 +1,11 @@
+/* Seção: about */
+
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,70px);align-items:center}
+.about__media img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:var(--radius)}
+.about__copy h2{margin-bottom:1rem}
+.about__copy p{margin-bottom:1rem}
+
+@media (max-width:860px){
+  .about{grid-template-columns:1fr}
+  .about__media img{aspect-ratio:4/3}
+}

@@ -1,0 +1,13 @@
+/* Seção: hero */
+
+.hero{position:relative;color:#fff;padding:clamp(80px,11vw,150px) 0 clamp(120px,14vw,180px);background:linear-gradient(rgba(6,27,66,.72),rgba(6,27,66,.72)),url('../../img/projects/hero.jpg') center/cover no-repeat,radial-gradient(circle at 80% 15%,rgba(249,178,0,.55),transparent 42%),linear-gradient(135deg,#0a2a5e,#0f4c9c 70%,#1b6fd1)}
+.hero__copy{max-width:660px}
+.hero__tag{font:600 .85rem var(--font-h);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.hero h1{font-size:clamp(2.2rem,4.8vw,3.8rem);font-weight:700;color:#fff;line-height:1.1;letter-spacing:-.02em}
+.hero h1 span{color:var(--accent)}
+.hero__lead{font-size:1.12rem;color:rgba(255,255,255,.88);margin:1.3rem 0 2rem;max-width:560px}
+.hero__actions{display:flex;flex-wrap:wrap;gap:.9rem}
+
+@media (max-width:620px){
+  .hero__actions .btn{width:100%}
+}

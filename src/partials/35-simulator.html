@@ -1,0 +1,26 @@
+<!-- ============ SIMULADOR ============ -->
+<section class="section" id="simulador">
+  <div class="container sim__grid">
+    <div>
+      <p class="kicker">Simulador</p>
+      <h2>Simule a sua economia em segundos</h2>
+      <p class="sim__intro">Informe o valor médio da sua conta de luz e veja uma estimativa de quanto ficaria no bolso com energia solar. Depois, um especialista monta a proposta exata para você.</p>
+      <ul class="checks">
+        <li>Sem compromisso</li>
+        <li>Proposta personalizada pelo WhatsApp</li>
+        <li>Financiamento em até 72x ou à vista</li>
+      </ul>
+    </div>
+    <div class="sim__card">
+      <label for="bill">Valor médio da sua conta de luz</label>
+      <div class="sim__input"><span>R$</span><input id="bill" type="number" inputmode="decimal" min="0" step="10" value="500"></div>
+      <input id="billRange" type="range" min="100" max="5000" step="10" value="500" aria-label="Ajustar valor da conta">
+      <div class="sim__result">
+        <div><span class="lbl">Economia estimada por mês</span><strong id="saveMonth">R$ 0</strong></div>
+        <div><span class="lbl">Em 12 meses</span><strong id="saveYear">R$ 0</strong></div>
+      </div>
+      <a id="simCta" class="btn btn--primary btn--lg btn--block" href="#" target="_blank" rel="noopener">Solicitar orçamento pelo WhatsApp</a>
+      <p class="sim__note">Estimativa ilustrativa, considerando economia de até 95% da conta (a taxa mínima da concessionária continua sendo cobrada). O resultado real depende do seu consumo, do local e do projeto.</p>
+    </div>
+  </div>
+</section>

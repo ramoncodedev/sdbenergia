@@ -1,0 +1,13 @@
+/* Estrutura: seções, cabeçalhos de seção e grades */
+
+.section{padding:clamp(60px,8vw,100px) 0}
+.section--gray{background:var(--gray)}
+.section__head{max-width:680px;margin-bottom:2.8rem}
+.section__head--center{margin-inline:auto;text-align:center}
+.section__head p:not(.kicker){margin-top:.9rem;font-size:1.05rem}
+.grid{display:grid;gap:22px}
+.grid--3{grid-template-columns:repeat(3,1fr)}
+
+@media (max-width:860px){
+  .grid--3{grid-template-columns:1fr}
+}

@@ -1,0 +1,39 @@
+/* Seção: systems */
+
+.systems__grid{display:grid;grid-template-columns:172px minmax(0,1.05fr) minmax(0,1fr);gap:20px 28px;align-items:center}
+.systems__thumbs{display:flex;flex-direction:column;gap:10px}
+.systems__thumbs button{width:172px;height:172px;border-radius:12px;overflow:hidden;opacity:.7;outline:3px solid transparent;outline-offset:-3px;transition:opacity .2s,outline-color .2s}
+.systems__thumbs button:hover{opacity:1}
+.systems__thumbs button.is-active{opacity:1;outline-color:var(--accent)}
+.systems__thumbs img{width:100%;height:100%;object-fit:cover}
+.systems__main{border-radius:16px;overflow:hidden;aspect-ratio:1/.9;background:var(--gray)}
+.systems__main img{width:100%;height:100%;object-fit:cover;transition:opacity .3s}
+.systems__info h2{font-size:clamp(1.5rem,2.4vw,2rem);margin-bottom:1.3rem}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px;background:var(--gray);border-radius:12px;margin-bottom:1rem}
+.tab{padding:.8rem .5rem;border-radius:8px;font:600 .92rem var(--font-h);color:var(--muted);transition:background .2s,color .2s}
+.tab:hover{color:var(--ink)}
+.tab.is-active{background:var(--accent);color:#1a1200}
+.flow{display:flex;align-items:flex-start;justify-content:space-between;padding:1.7rem 1.3rem 1.3rem;background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:1.1rem}
+.flow__node{display:flex;flex-direction:column;align-items:center;gap:1.4rem;width:84px;text-align:center}
+.flow__node small{font:600 .76rem var(--font-h);color:var(--muted);line-height:1.25}
+.flow__icon{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;color:#fff}
+.flow__icon--dark{background:var(--navy)}
+.flow__icon--accent{background:var(--accent);color:#1a1200}
+.flow__line{flex:1;height:2px;margin-top:27px;background:#cbd5e1}
+.flow__line--accent{background:#f6d38a}
+.systems__desc{font-size:.93rem;line-height:1.75}
+
+@media (max-width:1060px){
+  .systems__grid{grid-template-columns:minmax(0,1fr)}
+  .systems__main{order:1}
+  .systems__thumbs{order:2;flex-direction:row}
+  .systems__thumbs button{flex:1;width:auto;height:110px}
+  .systems__info{order:3}
+}
+
+@media (max-width:620px){
+  .flow{padding:1.3rem .7rem 1rem}
+  .flow__node{width:70px}
+  .flow__icon{width:48px;height:48px}
+  .flow__line{margin-top:23px}
+}

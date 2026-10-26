@@ -1,0 +1,8 @@
+/* Seção: faq */
+
+.faq details{border-bottom:1px solid var(--line);padding:1.2rem .2rem}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:1rem;font:600 1.08rem var(--font-h);color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:var(--gray);color:var(--navy);font-size:1.3rem;line-height:1}
+.faq details[open] summary::after{content:"–";background:var(--accent);color:#1a1200}
+.faq p{margin-top:.8rem;max-width:680px}
